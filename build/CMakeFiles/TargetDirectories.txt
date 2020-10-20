@@ -1,0 +1,5 @@
+/home/tim/dev/cpp/openGlProject/build/CMakeFiles/edit_cache.dir
+/home/tim/dev/cpp/openGlProject/build/CMakeFiles/GLAD.dir
+/home/tim/dev/cpp/openGlProject/build/CMakeFiles/OpenGlProject.dir
+/home/tim/dev/cpp/openGlProject/build/CMakeFiles/rebuild_cache.dir
+/home/tim/dev/cpp/openGlProject/build/CMakeFiles/STB_IMAGE.dir
