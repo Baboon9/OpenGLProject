@@ -1,10 +1,20 @@
 #include <iostream>
+#include "../include/glad/glad.h"
 #include <GLFW/glfw3.h>
+
+void processInput(GLFWwindow *window)
+{
+  if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    glfwSetWindowShouldClose(window, true);
+}
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
 
 int main ()
 {
-  std::cout << "Hello! \n";
-
   glfwInit();
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
   glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -19,11 +29,28 @@ int main ()
   }
   glfwMakeContextCurrent(window);
 
+  if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+  {
+    std::cout << "Failed to initialize GLAD" << std::endl;
+    return -1;
+  }    
+
+  glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);  
+  
+  glViewport(0, 0, 800, 600);
+  
   while(!glfwWindowShouldClose(window))
   {
+    processInput(window);
+
     glfwSwapBuffers(window);
     glfwPollEvents();
-  }
 
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+  }
+  
+  glfwTerminate();
+ 
   return 0;
 }

@@ -3,4 +3,6 @@
 
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o
  ../include/GLFW/glfw3.h
+ ../include/KHR/khrplatform.h
+ /home/tims/dev/OpenGLProject/include/glad/glad.h
  /home/tims/dev/OpenGLProject/src/main.cpp
