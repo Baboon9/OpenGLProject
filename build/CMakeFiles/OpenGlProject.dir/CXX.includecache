@@ -46,7 +46,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/tim/dev/cpp/openGlProject/src/main.cpp
+/home/tims/dev/OpenGLProject/src/main.cpp
 iostream
 -
 GLFW/glfw3.h

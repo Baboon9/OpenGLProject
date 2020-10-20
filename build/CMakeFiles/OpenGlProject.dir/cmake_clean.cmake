@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
-  "OpenGlProject.pdb"
   "OpenGlProject"
+  "OpenGlProject.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

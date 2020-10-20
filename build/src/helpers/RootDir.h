@@ -1,4 +1,4 @@
 #ifndef ROOT_DIR_H
 #define ROOT_DIR_H
-#define ROOT_DIR "/home/tim/dev/cpp/openGlProject/"
+#define ROOT_DIR "/home/tims/dev/OpenGLProject/"
 #endif
