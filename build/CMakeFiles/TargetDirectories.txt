@@ -1,5 +1,5 @@
-/home/tims/dev/OpenGLProject/build/CMakeFiles/rebuild_cache.dir
-/home/tims/dev/OpenGLProject/build/CMakeFiles/edit_cache.dir
-/home/tims/dev/OpenGLProject/build/CMakeFiles/GLAD.dir
-/home/tims/dev/OpenGLProject/build/CMakeFiles/STB_IMAGE.dir
-/home/tims/dev/OpenGLProject/build/CMakeFiles/OpenGlProject.dir
+/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/edit_cache.dir
+/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/GLAD.dir
+/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir
+/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/rebuild_cache.dir
+/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/STB_IMAGE.dir

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/STB_IMAGE.dir/thirdparty/stb_image.cpp.o"
-  "libSTB_IMAGE.a"
   "libSTB_IMAGE.pdb"
+  "libSTB_IMAGE.a"
 )
 
 # Per-language clean rules from dependency scanning.

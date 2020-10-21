@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tims/dev/OpenGLProject/src/main.cpp" "/home/tims/dev/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
+  "/home/tim/dev/cpp/OpenGLProject/src/Window.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/Window.cpp.o"
+  "/home/tim/dev/cpp/OpenGLProject/src/main.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tims/dev/OpenGLProject/build/CMakeFiles/STB_IMAGE.dir/DependInfo.cmake"
-  "/home/tims/dev/OpenGLProject/build/CMakeFiles/GLAD.dir/DependInfo.cmake"
+  "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/STB_IMAGE.dir/DependInfo.cmake"
+  "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/GLAD.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

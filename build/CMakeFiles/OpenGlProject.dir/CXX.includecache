@@ -54,7 +54,7 @@ inttypes.h
 stdint.h
 -
 
-/home/tims/dev/OpenGLProject/include/glad/glad.h
+/home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
 windows.h
 -
 stddef.h
@@ -74,11 +74,25 @@ stdint.h
 inttypes.h
 -
 
-/home/tims/dev/OpenGLProject/src/main.cpp
+/home/tim/dev/cpp/OpenGLProject/src/Window.cpp
+../include/glad/glad.h
+/home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
+Window.h
+/home/tim/dev/cpp/OpenGLProject/src/Window.h
+GLFW/glfw3.h
+-
+iostream
+-
+
+/home/tim/dev/cpp/OpenGLProject/src/Window.h
+GLFW/glfw3.h
+-
+
+/home/tim/dev/cpp/OpenGLProject/src/main.cpp
 iostream
 -
 ../include/glad/glad.h
-/home/tims/dev/OpenGLProject/include/glad/glad.h
-GLFW/glfw3.h
--
+/home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
+Window.h
+/home/tim/dev/cpp/OpenGLProject/src/Window.h
 

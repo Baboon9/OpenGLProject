@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++11 -pthread -lX11 -rdynamic CMakeFiles/OpenGlProject.dir/src/main.cpp.o -o OpenGlProject   -L/home/tims/dev/OpenGLProject/lib  -Wl,-rpath,/home/tims/dev/OpenGLProject/lib -lglfw3 /usr/lib/libGL.so libSTB_IMAGE.a libGLAD.a -ldl 
+/usr/bin/c++   -std=c++11 -pthread -lX11  -rdynamic CMakeFiles/OpenGlProject.dir/src/Window.cpp.o CMakeFiles/OpenGlProject.dir/src/main.cpp.o  -o OpenGlProject  -L/home/tim/dev/cpp/OpenGLProject/lib -Wl,-rpath,/home/tim/dev/cpp/OpenGLProject/lib -lglfw3 /usr/lib/x86_64-linux-gnu/libGL.so libSTB_IMAGE.a libGLAD.a -ldl 
