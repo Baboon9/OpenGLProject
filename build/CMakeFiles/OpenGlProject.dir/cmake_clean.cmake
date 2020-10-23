@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o"
+  "CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o"
   "CMakeFiles/OpenGlProject.dir/src/Window.cpp.o"
   "CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
   "OpenGlProject.pdb"
