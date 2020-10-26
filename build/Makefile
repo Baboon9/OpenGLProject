@@ -149,6 +149,33 @@ STB_IMAGE/fast:
 	$(MAKE) -f CMakeFiles/STB_IMAGE.dir/build.make CMakeFiles/STB_IMAGE.dir/build
 .PHONY : STB_IMAGE/fast
 
+src/RenderContext.o: src/RenderContext.cpp.o
+
+.PHONY : src/RenderContext.o
+
+# target to build an object file
+src/RenderContext.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o
+.PHONY : src/RenderContext.cpp.o
+
+src/RenderContext.i: src/RenderContext.cpp.i
+
+.PHONY : src/RenderContext.i
+
+# target to preprocess a source file
+src/RenderContext.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.i
+.PHONY : src/RenderContext.cpp.i
+
+src/RenderContext.s: src/RenderContext.cpp.s
+
+.PHONY : src/RenderContext.s
+
+# target to generate assembly for a file
+src/RenderContext.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.s
+.PHONY : src/RenderContext.cpp.s
+
 src/Shader.o: src/Shader.cpp.o
 
 .PHONY : src/Shader.o
@@ -322,6 +349,9 @@ help:
 	@echo "... OpenGlProject"
 	@echo "... rebuild_cache"
 	@echo "... STB_IMAGE"
+	@echo "... src/RenderContext.o"
+	@echo "... src/RenderContext.i"
+	@echo "... src/RenderContext.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"

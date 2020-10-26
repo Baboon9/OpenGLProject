@@ -7,5 +7,5 @@ RenderContext::RenderContext(Shader *shader, VertexArray *vertexArray): m_shader
 void RenderContext::render()
 {
   m_shader->useProgram();
-  m_vertexArray->bind();
+  m_vertexArray->render();
 }

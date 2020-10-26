@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/tim/dev/cpp/OpenGLProject/src/RenderContext.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o"
   "/home/tim/dev/cpp/OpenGLProject/src/Shader.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o"
   "/home/tim/dev/cpp/OpenGLProject/src/VertexArray.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o"
   "/home/tim/dev/cpp/OpenGLProject/src/Window.cpp" "/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles/OpenGlProject.dir/src/Window.cpp.o"

@@ -74,9 +74,15 @@ stdint.h
 inttypes.h
 -
 
+/home/tim/dev/cpp/OpenGLProject/src/RenderContext.cpp
+RenderContext.h
+/home/tim/dev/cpp/OpenGLProject/src/RenderContext.h
+
 /home/tim/dev/cpp/OpenGLProject/src/RenderContext.h
 Shader.h
 /home/tim/dev/cpp/OpenGLProject/src/Shader.h
+VertexArray.h
+/home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
 
 /home/tim/dev/cpp/OpenGLProject/src/Shader.cpp
 ../include/glad/glad.h
@@ -93,8 +99,6 @@ iostream
 /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
 VertexArray.h
 /home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
-iostream
--
 
 /home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
 

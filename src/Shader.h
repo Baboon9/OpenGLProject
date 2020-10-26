@@ -14,6 +14,7 @@ class Shader
   public:
     void useProgram();
     Shader(const char *vertexShaderSource, const char *fragmentShaderSource);
+    ~Shader();
 };
 
 #endif

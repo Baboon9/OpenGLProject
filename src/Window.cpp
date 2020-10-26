@@ -16,12 +16,14 @@ Window::Window(int width, int height):m_widht{width}, m_height{height}
   {
     std::cout << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
+    exit(-1);
   }
   glfwMakeContextCurrent(m_window);
 
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
   {
     std::cout << "Failed to initialize GLAD" << std::endl;
+    exit(-1);
   }
 
   glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
@@ -46,17 +48,19 @@ void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height
     glViewport(0, 0, width, height);
 }
 
-void Window::render(RenderContext renderContext)
+void Window::render(RenderContext *renderContext)
 {
 
   while(!glfwWindowShouldClose(m_window))
   {
     processInput(m_window);
 
-    glfwSwapBuffers(m_window);
-    glfwPollEvents();
-
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+
+    renderContext->render();
+
+    glfwSwapBuffers(m_window);
+    glfwPollEvents();
   }
 }
