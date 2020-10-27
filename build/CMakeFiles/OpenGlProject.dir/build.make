@@ -83,9 +83,22 @@ CMakeFiles/OpenGlProject.dir/src/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGlProject.dir/src/Shader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/dev/cpp/OpenGLProject/src/Shader.cpp -o CMakeFiles/OpenGlProject.dir/src/Shader.cpp.s
 
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: CMakeFiles/OpenGlProject.dir/flags.make
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../src/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o -c /home/tim/dev/cpp/OpenGLProject/src/Texture.cpp
+
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGlProject.dir/src/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/dev/cpp/OpenGLProject/src/Texture.cpp > CMakeFiles/OpenGlProject.dir/src/Texture.cpp.i
+
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGlProject.dir/src/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/dev/cpp/OpenGLProject/src/Texture.cpp -o CMakeFiles/OpenGlProject.dir/src/Texture.cpp.s
+
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o: CMakeFiles/OpenGlProject.dir/flags.make
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o: ../src/VertexArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o -c /home/tim/dev/cpp/OpenGLProject/src/VertexArray.cpp
 
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.s: cmake_force
 
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: CMakeFiles/OpenGlProject.dir/flags.make
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGlProject.dir/src/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGlProject.dir/src/Window.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGlProject.dir/src/Window.cpp.o -c /home/tim/dev/cpp/OpenGLProject/src/Window.cpp
 
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/OpenGlProject.dir/src/Window.cpp.s: cmake_force
 
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: CMakeFiles/OpenGlProject.dir/flags.make
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGlProject.dir/src/main.cpp.o -c /home/tim/dev/cpp/OpenGLProject/src/main.cpp
 
 CMakeFiles/OpenGlProject.dir/src/main.cpp.i: cmake_force
@@ -126,6 +139,7 @@ CMakeFiles/OpenGlProject.dir/src/main.cpp.s: cmake_force
 OpenGlProject_OBJECTS = \
 "CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o" \
 "CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o" \
+"CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o" \
 "CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o" \
 "CMakeFiles/OpenGlProject.dir/src/Window.cpp.o" \
 "CMakeFiles/OpenGlProject.dir/src/main.cpp.o"
@@ -135,6 +149,7 @@ OpenGlProject_EXTERNAL_OBJECTS =
 
 OpenGlProject: CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o
 OpenGlProject: CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o
+OpenGlProject: CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o
 OpenGlProject: CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o
 OpenGlProject: CMakeFiles/OpenGlProject.dir/src/Window.cpp.o
 OpenGlProject: CMakeFiles/OpenGlProject.dir/src/main.cpp.o
@@ -143,7 +158,7 @@ OpenGlProject: /usr/lib/x86_64-linux-gnu/libGL.so
 OpenGlProject: libSTB_IMAGE.a
 OpenGlProject: libGLAD.a
 OpenGlProject: CMakeFiles/OpenGlProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OpenGlProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OpenGlProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGlProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

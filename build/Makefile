@@ -203,6 +203,33 @@ src/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
 
+src/Texture.o: src/Texture.cpp.o
+
+.PHONY : src/Texture.o
+
+# target to build an object file
+src/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
+
+src/Texture.i: src/Texture.cpp.i
+
+.PHONY : src/Texture.i
+
+# target to preprocess a source file
+src/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
+
+src/Texture.s: src/Texture.cpp.s
+
+.PHONY : src/Texture.s
+
+# target to generate assembly for a file
+src/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
+
 src/VertexArray.o: src/VertexArray.cpp.o
 
 .PHONY : src/VertexArray.o
@@ -355,6 +382,9 @@ help:
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
 	@echo "... src/VertexArray.o"
 	@echo "... src/VertexArray.i"
 	@echo "... src/VertexArray.s"

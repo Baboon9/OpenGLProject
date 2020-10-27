@@ -48,7 +48,7 @@ void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height
     glViewport(0, 0, width, height);
 }
 
-void Window::render(RenderContext *renderContext)
+void Window::render(void(*renderFunc)())
 {
 
   while(!glfwWindowShouldClose(m_window))
@@ -58,7 +58,7 @@ void Window::render(RenderContext *renderContext)
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    renderContext->render();
+    (*renderFunc)();
 
     glfwSwapBuffers(m_window);
     glfwPollEvents();

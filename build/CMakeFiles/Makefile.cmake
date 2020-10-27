@@ -15,7 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/feature_tests.cxx"
   "../cmake/FindGLFW3.cmake"
   "../cmake/FindGLM.cmake"
-  "../src/helpers/RootDir.h"
+  "../src/helpers/RootDir.h.in"
   "/usr/share/cmake-3.13/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.13/Modules/CMakeCInformation.cmake"

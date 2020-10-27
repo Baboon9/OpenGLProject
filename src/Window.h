@@ -14,7 +14,7 @@ class Window
   public:
     Window(int width, int height);
     ~Window();
-    void render(RenderContext *renderContext);
+    void render(void (*renderFunc)());
 };
 
 #endif

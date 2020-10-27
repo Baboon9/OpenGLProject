@@ -4,12 +4,21 @@
 CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o: ../src/RenderContext.cpp
 CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o: ../src/RenderContext.h
 CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o: ../src/Shader.h
+CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o: ../src/Texture.h
 CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o: ../src/VertexArray.h
 
 CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o: ../include/glad/glad.h
 CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o: ../src/Shader.cpp
 CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o: ../src/Shader.h
+CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o: src/helpers/RootDir.h
+
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../include/KHR/khrplatform.h
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../include/glad/glad.h
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../include/stb_image.h
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../src/Texture.cpp
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: ../src/Texture.h
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o: src/helpers/RootDir.h
 
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o: ../include/glad/glad.h
@@ -21,6 +30,7 @@ CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../include/glad/glad.h
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/RenderContext.h
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/Shader.h
+CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/Texture.h
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/VertexArray.h
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/Window.cpp
 CMakeFiles/OpenGlProject.dir/src/Window.cpp.o: ../src/Window.h
@@ -30,7 +40,9 @@ CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../include/glad/glad.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/RenderContext.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/Shader.h
+CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/Texture.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/VertexArray.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/Window.h
 CMakeFiles/OpenGlProject.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/OpenGlProject.dir/src/main.cpp.o: src/helpers/RootDir.h
 

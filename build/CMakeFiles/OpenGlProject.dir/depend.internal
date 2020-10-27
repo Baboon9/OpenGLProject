@@ -5,12 +5,21 @@ CMakeFiles/OpenGlProject.dir/src/RenderContext.cpp.o
  /home/tim/dev/cpp/OpenGLProject/src/RenderContext.cpp
  /home/tim/dev/cpp/OpenGLProject/src/RenderContext.h
  /home/tim/dev/cpp/OpenGLProject/src/Shader.h
+ /home/tim/dev/cpp/OpenGLProject/src/Texture.h
  /home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
 CMakeFiles/OpenGlProject.dir/src/Shader.cpp.o
  ../include/KHR/khrplatform.h
  /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
  /home/tim/dev/cpp/OpenGLProject/src/Shader.cpp
  /home/tim/dev/cpp/OpenGLProject/src/Shader.h
+ src/helpers/RootDir.h
+CMakeFiles/OpenGlProject.dir/src/Texture.cpp.o
+ ../include/KHR/khrplatform.h
+ /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
+ /home/tim/dev/cpp/OpenGLProject/include/stb_image.h
+ /home/tim/dev/cpp/OpenGLProject/src/Texture.cpp
+ /home/tim/dev/cpp/OpenGLProject/src/Texture.h
+ src/helpers/RootDir.h
 CMakeFiles/OpenGlProject.dir/src/VertexArray.cpp.o
  ../include/KHR/khrplatform.h
  /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
@@ -22,6 +31,7 @@ CMakeFiles/OpenGlProject.dir/src/Window.cpp.o
  /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
  /home/tim/dev/cpp/OpenGLProject/src/RenderContext.h
  /home/tim/dev/cpp/OpenGLProject/src/Shader.h
+ /home/tim/dev/cpp/OpenGLProject/src/Texture.h
  /home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
  /home/tim/dev/cpp/OpenGLProject/src/Window.cpp
  /home/tim/dev/cpp/OpenGLProject/src/Window.h
@@ -31,6 +41,8 @@ CMakeFiles/OpenGlProject.dir/src/main.cpp.o
  /home/tim/dev/cpp/OpenGLProject/include/glad/glad.h
  /home/tim/dev/cpp/OpenGLProject/src/RenderContext.h
  /home/tim/dev/cpp/OpenGLProject/src/Shader.h
+ /home/tim/dev/cpp/OpenGLProject/src/Texture.h
  /home/tim/dev/cpp/OpenGLProject/src/VertexArray.h
  /home/tim/dev/cpp/OpenGLProject/src/Window.h
  /home/tim/dev/cpp/OpenGLProject/src/main.cpp
+ src/helpers/RootDir.h

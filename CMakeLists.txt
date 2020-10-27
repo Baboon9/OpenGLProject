@@ -2,12 +2,12 @@ cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 project(OpenGlProject)
 
 # Add source files
-file(GLOB_RECURSE SOURCE_FILES 
+file(GLOB_RECURSE SOURCE_FILES
 	${CMAKE_SOURCE_DIR}/src/*.c
 	${CMAKE_SOURCE_DIR}/src/*.cpp)
-	
+
 # Add header files
-file(GLOB_RECURSE HEADER_FILES 
+file(GLOB_RECURSE HEADER_FILES
 	${CMAKE_SOURCE_DIR}/src/*.h
 	${CMAKE_SOURCE_DIR}/src/*.hpp)
 
@@ -15,7 +15,7 @@ file(GLOB_RECURSE HEADER_FILES
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 # Configure assets header file
-configure_file(src/helpers/RootDir.h src/helpers/RootDir.h)
+configure_file(src/helpers/RootDir.h.in src/helpers/RootDir.h)
 include_directories(${CMAKE_BINARY_DIR}/src)
 
 # Define the executable
