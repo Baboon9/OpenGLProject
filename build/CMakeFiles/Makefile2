@@ -105,8 +105,8 @@ clean: CMakeFiles/GLAD.dir/clean
 # Target rules for target CMakeFiles/OpenGlProject.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGlProject.dir/all: CMakeFiles/GLAD.dir/all
 CMakeFiles/OpenGlProject.dir/all: CMakeFiles/STB_IMAGE.dir/all
+CMakeFiles/OpenGlProject.dir/all: CMakeFiles/GLAD.dir/all
 	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/depend
 	$(MAKE) -f CMakeFiles/OpenGlProject.dir/build.make CMakeFiles/OpenGlProject.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/dev/cpp/OpenGLProject/build/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target OpenGlProject"

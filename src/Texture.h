@@ -6,8 +6,8 @@ class Texture
   private:
     unsigned int m_texture;
   public:
-    Texture(const char *texturePath);
-    void bind();
+    Texture(const char *texturePath, int colorFormat);
+    void bind(unsigned int textureUnit);
 };
 
 #endif

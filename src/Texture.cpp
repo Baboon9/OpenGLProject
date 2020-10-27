@@ -4,7 +4,7 @@
 #include "helpers/RootDir.h"
 #include "Texture.h"
 
-Texture::Texture(const char *texturePath)
+Texture::Texture(const char *texturePath, int colorFormat)
 {
   std::string n_texturePath{ROOT_DIR};
   n_texturePath = n_texturePath + texturePath;
@@ -19,11 +19,12 @@ Texture::Texture(const char *texturePath)
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
   // load and generate the texture
+  stbi_set_flip_vertically_on_load(true);
   int width, height, nrChannels;
   unsigned char *data = stbi_load(texturePath, &width, &height, &nrChannels, 0);
   if (data)
   {
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, colorFormat, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
   }
   else
@@ -33,7 +34,8 @@ Texture::Texture(const char *texturePath)
   stbi_image_free(data);
 }
 
-void Texture::bind()
+void Texture::bind(unsigned int textureUnit)
 {
+  glActiveTexture(GL_TEXTURE0 + textureUnit);
   glBindTexture(GL_TEXTURE_2D, m_texture);
 }

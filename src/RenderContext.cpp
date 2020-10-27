@@ -6,7 +6,7 @@ RenderContext::RenderContext(Shader *shader, VertexArray *vertexArray, Texture *
 
 void RenderContext::render()
 {
-  m_shader->useProgram();
+  /*m_shader->useProgram();
   m_texture->bind();
-  m_vertexArray->render();
+  m_vertexArray->render();*/
 }

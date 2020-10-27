@@ -8,10 +8,10 @@
 
 const float vertices[] = {
   // positions          // colors           // texture coords
-  0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
-  0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // bottom right
-  -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
-  -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // top left
+  0.5f,   0.5f,   0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
+  0.5f,   -0.5f,  0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // bottom right
+  -0.5f,  -0.5f,  0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
+  -0.5f,  0.5f,   0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // top left
 };
 
 const unsigned int indices[] = {  // note that we start from 0!
@@ -28,7 +28,10 @@ Texture *texture2;
 void renderFunc()
 {
   myShader->useProgram();
-  texture1->bind();
+  texture1->bind(0);
+  texture2->bind(1);
+  myShader->setInt("texture1", 0);
+  myShader->setInt("texture2", 1);
   myVertexArray->render();
 }
 
@@ -38,8 +41,8 @@ int main ()
 
   myShader = new Shader{"res/shader/basic.vert", "res/shader/basic.frag"};
   myVertexArray = new VertexArray{vertices, sizeof(vertices), indices, sizeof(indices)};
-  texture1 = new Texture{"res/texture/container.jpg"};
-  texture2 = new Texture{"res/texture/awesomeface.png"};
+  texture1 = new Texture{"res/texture/container.jpg", GL_RGB};
+  texture2 = new Texture{"res/texture/awesomeface.png", GL_RGBA};
 
   //RenderContext *myRenderContext = new RenderContext(myShader, myVertexArray, myTexture);
 
