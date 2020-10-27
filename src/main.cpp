@@ -18,22 +18,28 @@ const unsigned int indices[] = {  // note that we start from 0!
   0, 1, 3,   // first triangle
   1, 2, 3    // second triangle
 };
-/*
-Shader *myShader = new Shader{"res/shader/basic.vert", "res/shader/basic.frag"};
-VertexArray *myVertexArray = new VertexArray{vertices, sizeof(vertices), indices, sizeof(indices)};
-Texture *texture1 = new Texture{"res/texture/container.jpg"};
-Texture *texture2 = new Texture{"res/texture/awesomeface.png"};
-*/
+
+Shader *myShader;
+VertexArray *myVertexArray;
+Texture *texture1;
+Texture *texture2;
+
 
 void renderFunc()
 {
-  std::cout << "renderFunc Works \n";
+  myShader->useProgram();
+  texture1->bind();
+  myVertexArray->render();
 }
 
 int main ()
 {
   Window *myWindow = new Window{800, 600};
 
+  myShader = new Shader{"res/shader/basic.vert", "res/shader/basic.frag"};
+  myVertexArray = new VertexArray{vertices, sizeof(vertices), indices, sizeof(indices)};
+  texture1 = new Texture{"res/texture/container.jpg"};
+  texture2 = new Texture{"res/texture/awesomeface.png"};
 
   //RenderContext *myRenderContext = new RenderContext(myShader, myVertexArray, myTexture);
 
