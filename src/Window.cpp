@@ -29,7 +29,7 @@ Window::Window(int width, int height):m_widht{width}, m_height{height}
   glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
 
   glViewport(0, 0, 800, 600);
-
+  glEnable(GL_DEPTH_TEST);
 }
 
 Window::~Window()
@@ -56,7 +56,7 @@ void Window::render(void(*renderFunc)())
     processInput(m_window);
 
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     (*renderFunc)();
 
