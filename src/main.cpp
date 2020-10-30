@@ -3,8 +3,12 @@
 #include "Window.h"
 #include "Shader.h"
 #include "VertexArray.h"
-#include "helpers/RootDir.h"
 #include "Texture.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+constexpr int g_width{800}, g_height{600};
 
 const float vertices[] = {
   // positions          // colors           // texture coords
@@ -24,6 +28,7 @@ VertexArray *myVertexArray;
 Texture *texture1;
 Texture *texture2;
 
+glm::mat4 g_model;
 
 void renderFunc()
 {
@@ -32,12 +37,13 @@ void renderFunc()
   texture2->bind(1);
   myShader->setInt("texture1", 0);
   myShader->setInt("texture2", 1);
+  myShader->setMat4("model", g_model);
   myVertexArray->render();
 }
 
 int main ()
 {
-  Window *myWindow = new Window{800, 600};
+  Window *myWindow = new Window{g_width, g_height};
 
   myShader = new Shader{"res/shader/basic.vert", "res/shader/basic.frag"};
   myVertexArray = new VertexArray{vertices, sizeof(vertices), indices, sizeof(indices)};
@@ -45,6 +51,8 @@ int main ()
   texture2 = new Texture{"res/texture/awesomeface.png", GL_RGBA};
 
   //RenderContext *myRenderContext = new RenderContext(myShader, myVertexArray, myTexture);
+
+  g_model = glm::mat4(1.0f);
 
   myWindow->render(renderFunc);
 

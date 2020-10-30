@@ -34,7 +34,7 @@ stdint.h
 inttypes.h
 -
 
-/home/tim/dev/cpp/OpenGLProject/thirdparty/glad.c
+/home/tims/dev/OpenGLProject/thirdparty/glad.c
 stdio.h
 -
 stdlib.h

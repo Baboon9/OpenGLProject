@@ -5,6 +5,8 @@
 #include <fstream>
 #include <sstream>
 #include "helpers/RootDir.h"
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
 
 Shader::Shader(const char *vertexPath, const char *fragmentPath)
 {
@@ -109,4 +111,9 @@ void Shader::setInt(const std::string &name, int value) const
 void Shader::setFloat(const std::string &name, float value) const
 {
     glUniform1f(glGetUniformLocation(m_shaderProgram, name.c_str()), value);
+}
+void Shader::setMat4(const std::string &name, const glm::mat4 &mat)
+{
+  unsigned int matLoc = glGetUniformLocation(m_shaderProgram, name.c_str());
+  glUniformMatrix4fv(matLoc, 1, GL_FALSE, glm::value_ptr(mat));
 }
